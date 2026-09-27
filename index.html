@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stash It — Support</title>
+<meta name="description" content="Help and contact for Stash It, the app that keeps track of what's in every bin, shelf, and closet.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#FAF6F1; --card:#FFFFFF; --text:#2B2420; --muted:#6E625A; --accent:#B24E28; --stroke:#EADFD4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1C1917; --card:#27221F; --text:#F3ECE6; --muted:#B5A89E; --accent:#E07A50; --stroke:#3A322D; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display:flex; align-items:center; gap:16px; margin-bottom: 32px; }
+  header img { width:72px; height:72px; border-radius:16px; }
+  h1 { font: 700 32px/1.15 ui-rounded, -apple-system, sans-serif; margin:0; }
+  header p { margin:4px 0 0; color:var(--muted); }
+  h2 { font: 650 21px/1.3 ui-rounded, -apple-system, sans-serif; margin: 40px 0 12px; }
+  details { background:var(--card); border:1px solid var(--stroke); border-radius:14px; padding: 14px 18px; margin: 10px 0; }
+  summary { cursor:pointer; font-weight:600; }
+  details p, details ul { margin: 10px 0 2px; color: var(--text); }
+  a { color: var(--accent); }
+  .contact { background:var(--card); border:1px solid var(--stroke); border-radius:14px; padding: 18px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>Stash It</h1>
+      <p>Know what's in every bin — and where every bin is.</p>
+    </div>
+  </header>
+
+  <div class="contact">
+    <strong>Need help?</strong> Email <a href="mailto:mike@mikerags.com?subject=Stash%20It%20support">mike@mikerags.com</a>
+    with your device model and iOS version, and a quick description of what happened. You'll get a reply from the developer.
+  </div>
+
+  <h2>Common questions</h2>
+
+  <details>
+    <summary>How does syncing between my iPhone, iPad, and Mac work?</summary>
+    <p>Stash It syncs through your own private iCloud database. Sign in to iCloud with the same Apple ID on each device
+    and your places, items, photos, and tags appear everywhere. There's no Stash It account and no third-party server.
+    You can see the current sync status in Settings → Sync.</p>
+  </details>
+
+  <details>
+    <summary>I installed Stash It on a new device and my things aren't there yet.</summary>
+    <p>On first launch Stash It checks iCloud for your existing stash before offering to start fresh. A large
+    collection with many photos can take a few minutes to download — keep the app open on Wi-Fi. If nothing arrives,
+    confirm you're signed in to iCloud with the same Apple ID and that iCloud is turned on for Stash It
+    (Settings → your name → iCloud).</p>
+  </details>
+
+  <details>
+    <summary>How do I back up or move my data?</summary>
+    <p>Settings → Backup → <em>Back Up Now</em> saves a single <code>.stashbackup</code> file wherever you choose.
+    <em>Restore from Backup</em> brings it back. Before a restore or CSV import replaces anything, Stash It saves an automatic
+    safety backup you can find in the Files app under On My iPhone › Stash It › Backups.</p>
+  </details>
+
+  <details>
+    <summary>Can I get my inventory into a spreadsheet?</summary>
+    <p>Yes. Settings → Export → <em>Export inventory (CSV)</em> creates a spreadsheet of every place and item, including
+    values — handy for insurance. <em>Import inventory (CSV)</em> adds or updates items from a spreadsheet and shows a preview first.</p>
+  </details>
+
+  <details>
+    <summary>How do QR labels work?</summary>
+    <p>Any place or item can have a QR label. Print one from its screen, or print many at once from Settings →
+    Print QR Labels. Scanning a label (Home → Scan QR) opens that place instantly, and <em>Find My Stash</em> uses the camera
+    to spot the right labeled box in a stack.</p>
+  </details>
+
+  <details>
+    <summary>I deleted something by mistake.</summary>
+    <p>Deleted places and items go to Settings → Trash, where you can restore them. Archived things live in
+    Settings → Archived.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete all my data?</summary>
+    <p>Deleting the app removes its data from that device. Your synced copy stays in iCloud until you remove it:
+    Settings → your name → iCloud → Manage Account Storage → Stash It → Delete Data.</p>
+  </details>
+
+  <h2>Privacy</h2>
+  <p>Stash It collects nothing, has no ads or analytics, and has no servers. Read the full
+  <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>© 2026 Stash It</footer>
+</main>
+</body>
+</html>
